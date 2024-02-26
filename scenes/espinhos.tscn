@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://bc7xaxbhna2lr"]
+
+[ext_resource type="Texture2D" uid="uid://bor2d141wqjrd" path="res://Art Assets/Art Assets/Hazards/Spikes.png" id="1_52e7x"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_he137"]
+size = Vector2(47, 8)
+
+[node name="Espinhos" type="Area2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(19.5, 4)
+shape = SubResource("RectangleShape2D_he137")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(4, 0)
+texture = ExtResource("1_52e7x")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(19, 0)
+texture = ExtResource("1_52e7x")
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+position = Vector2(35, 0)
+texture = ExtResource("1_52e7x")
